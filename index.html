@@ -129,6 +129,7 @@
             itemsToRender.forEach(p => {
                 const card = document.createElement('div');
                 card.className = "bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden flex flex-col hover:shadow-md transition";
+                // Número do WhatsApp atualizado: 5512991421077
                 card.innerHTML = `
                     <div class="h-48 overflow-hidden bg-slate-100 relative">
                         <img src="${p.image}" alt="${p.name}" class="w-full h-full object-cover">
@@ -139,7 +140,7 @@
                         <p class="text-slate-500 text-sm mb-4 flex-grow line-clamp-2">${p.desc || 'Sem descrição.'}</p>
                         <div class="flex items-center justify-between mt-auto">
                             <span class="text-indigo-600 font-bold text-lg">R$ ${Number(p.price).toFixed(2)}</span>
-                            <a href="https://wa.me/5500000000000?text=Olá! Tenho interesse em comprar: *${encodeURIComponent(p.name)}* (R$ ${Number(p.price).toFixed(2)})" target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white text-xs px-3 py-2 rounded-lg font-medium transition">
+                            <a href="https://wa.me/5512991421077?text=Olá! Tenho interesse em comprar: *${encodeURIComponent(p.name)}* (R$ ${Number(p.price).toFixed(2)})" target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white text-xs px-3 py-2 rounded-lg font-medium transition">
                                 💬 Comprar
                             </a>
                         </div>
